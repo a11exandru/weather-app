@@ -1,13 +1,27 @@
 doctype html
 html(lang="en")
+    -
+        var title = "Weather App by Alex Puiu";
+            metaDescription = "Hehe, you really see that?!";
     head
         meta(charset="UTF-8")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
         meta(http-equiv="X-UA-Compatible", content="ie=edge")
-        meta(name="description", content="Process to learn JavaScript: 40% lalalalalala")
-        title Weather App by Alex Puiu
+        meta(name="description", content=metaDescription)
+        title=title
         link(rel="stylesheet", href="style.css")
+        link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Nanum+Gothic")
     body
+        .location
+            h1.location-timezone Timezone
+            p Icon
+
+        .temperature
+            .degree-section
+                h2.temperature-degree 34
+                span o
+            .temperature-description Man, is really cold
+
 
 
 
