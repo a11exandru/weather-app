@@ -14,12 +14,12 @@ html(lang="en")
     body
         .location
             h1.location-timezone Timezone
-            p Icon
+            canvas(class="icon" width="128" height="128")
 
         .temperature
             .degree-section
                 h2.temperature-degree 34
-                span o
+                span.temperature-span &#x2103
             .temperature-description Man, is really cold
 
 
@@ -30,4 +30,5 @@ html(lang="en")
 
 //- JavaScript from app.js
 script
+    include skycons.js
     include app.js
